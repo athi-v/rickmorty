@@ -1,0 +1,45 @@
+.search {
+    
+    font-family: 'Montserrat';
+text-align: center;
+}
+
+.search .results {
+display: grid;
+gap: 15px;
+grid-template-columns: repeat(4,1fr);
+margin-top: 70px;
+}
+
+.search img {
+    border-radius: 25px;
+}
+
+.search .input {
+    width: 50%;
+    border: 1px grey solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 70px;
+
+}
+
+::placeholder {
+    text-align: center;
+}
+@media screen and (max-width:920px) {
+    .search .results {      
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        }
+
+        .search .input {
+            width: 100%;
+        }
+        
+        .search img {
+        margin-top: 25px;
+   align-self: center;
+   width: 100%;
+        }
+}
